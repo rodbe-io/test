@@ -1,0 +1,16 @@
+{
+  "name": "fe-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "pnpm@9.15.2",
+  "devDependencies": {
+    "@types/node": "^22.13.2"
+  }
+}

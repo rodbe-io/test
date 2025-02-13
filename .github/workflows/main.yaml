@@ -1,0 +1,17 @@
+name: Using shared workflows
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  call-workflow:
+    uses: rodbe-io/pipes/.github/workflows/kev.yaml@main
+    with:
+      build_env: "staging"
+      extra_envs: '{"CUSTOM_API_URL": "https://api.example.com", "FEATURE_FLAG": "true"}'
+    secrets: inherit
+    # secrets:
+    #   npm_token: ${{ secrets.NPM_TOKEN }}
+    #   deploy_key: ${{ secrets.DEPLOY_KEY }}
